@@ -1,0 +1,211 @@
+---
+layout: default
+---
+<!-- ========== About ========== -->
+<div class="docs-section" id="about">
+  <h4>About</h4>
+    <p>
+      I am currently doing undergraduate research intern in the <a href="https://sites.google.com/site/hgjeoncv/" style="color: #6A5ACD; text-decoration:none;">**GIST Visual AI Lab**</a> under the supervision of Prof. Haegon Jeon.
+      I received my B.S. in Electric Engineering and Computer Science (major) and AI Convergence (minor) at GIST in August, 2024.  
+    </p>
+    <p>
+      My research interests lie on Inverse Rendering and Novel View Synthesis, with a current focus on Image Relighting. 💡
+      My goal is to address illumination problems that have yet to be solved in computer vision and graphics. 🤔
+          <!-- Here are some keywords:
+          <ul>
+            <li>
+              Q
+            </li>
+            <li>
+              R
+            </li>
+            <li>
+              Efficiency
+            </li>
+            <li>
+              Robustness
+            </li>
+          </ul> -->
+      </p>
+</div>
+
+<!-- ========== News ========== -->
+<!-- <div class="docs-section" id="news">
+  <h4>News</h4>
+    <ul>
+      <li>
+        <b style="color:cadetblue">[Oct. 2022]</b> &nbsp&nbsp
+         Our paper on Graph-Inducted Transformers (GIT) has been accepted to <b>EMNLP 2022</b>!
+      </li>
+      <li>
+        <b style="color:cadetblue">[Aug. 2022]</b>&nbsp&nbsp
+        Started my Ph.D. journey at <b>Georgia Tech</b>!
+      </li>
+    </ul>
+</div> -->
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications <span style="font-size:15px">(*: Equal contribution)</span></h4>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <div class="paper">
+          <div class="row">
+            <div class="four columns">
+              <div class="figure">
+                <img src="{{ paper.image }}" width="100%">
+              </div>
+            </div>
+            <div class="eight columns">
+              <p class="title"><b>{{ paper.title }}</b></p>
+              <p>{{ paper.authors }}</p>
+              {% if paper.venue1 %}
+              <p><i>{{ paper.venue1 }}</i></p>
+              {% endif %}
+              {% if paper.venue2 %}
+              <p><i>{{ paper.venue2 }}</i></p>
+              {% endif %}
+              <div class="paper-buttons">
+                {% if paper.paper_pdf %}
+                  <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+                {% endif %}
+
+                {% if paper.project_page %}
+                  <a class="button" href="{{ paper.project_page }}" target="_blank">Project</a>
+                {% endif %}
+
+                {% if paper.slides %}
+                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                {% endif %}
+
+                {% if paper.poster %}
+                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                {% endif %}
+
+                {% if paper.video %}
+                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                {% endif %}
+
+                {% if paper.code %}
+                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <div class="row">
+            <div class="four columns">
+              <div class="figure">
+                <img src="{{ paper.image }}" width="100%">
+              </div>
+            </div>
+            <div class="eight columns">
+              <p class="title"><b>{{ paper.title }}</b></p>
+              <p>{{ paper.authors }}</p>
+              <p><i>{{ paper.venue }}</i></p>
+              <div class="paper-buttons">
+                {% if paper.paper_pdf %}
+                  <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+                {% endif %}
+
+                {% if paper.slides %}
+                  <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+                {% endif %}
+
+                {% if paper.poster %}
+                  <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+                {% endif %}
+
+                {% if paper.video %}
+                  <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+                {% endif %}
+
+                {% if paper.code %}
+                  <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+    </div>
+
+</div>
+
+<!-- ========== Experience ========== -->
+<div class="docs-section" id="education">
+  <h4>Education</h4>
+        <div class="paper">
+          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Sep. 2021 - Present</b></b></p>
+          <p>M.S. in Artificial Intelligence </p>
+        </div>
+        <div class="paper">
+          <p class="title"><b>Korea Advanced Institute of Science and Technology (KAIST)<b style="float:right;">Mar. 2016 - Aug. 2021</b></b></p>
+          <p>B.S. in Chemistry (major), Computer Science (double major), and Mathematics (double major) </p>
+        </div>
+</div>
+
+<!-- ========== Experience ========== -->
+<div class="docs-section" id="experience">
+  <h4>Experience</h4>
+        <div class="paper">
+          <p class="title"><b>Winter Internship<b style="float:right;">Dec. 2019 - Feb. 2020</b></b></p>
+          <a href="https://www.skhynix.com">SK hynix</a>
+          <p></p>
+        </div>
+</div>
+
+
+<!-- ========== Honors & Awards ========== -->
+<!-- <div class="docs-section" id="honors">
+  <h4>Honors & Awards</h4>
+        <div class="paper">
+          <p class="title"><b>xxx<b style="float:right;">Sep. 2021 - Feb. 2022</b></b></p>
+          <p class="title"><b>xxx</b></p>
+          <p>Award</p>
+          <p></p>
+        </div>
+
+        <div class="paper">
+          <p class="title"><b>xxx</b></p>
+          <p>1st prize</p>
+          <p></p>
+        </div>
+</div> -->
+
+
+<!-- ========== RESUME ========== -->
+<!-- <div class="docs-section" id="resume">
+  <h4>Vitæ</h4> -->
+
+  <!-- <p>Full CV in <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p> -->
+  <!-- The Timeline -->
+  <!-- <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div> -->
+
+</div>

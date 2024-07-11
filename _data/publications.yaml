@@ -1,0 +1,33 @@
+papers:
+# - title: "Data-Efficient Molecular Generation with Hierarchical Textual Inversion"
+#     image: "assets/publications/2023_HI-Mol/image.png"
+#     authors: "<b>Seojin Kim</b>, <a href=https://jaehyun513.github.io>Jaehyun Nam</a>, <a href='https://sihyun.me'>Sihyun Yu</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Younghoon Shin</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
+#     venue: "NeurIPS Workshop on New Frontiers of AI for Drug Discovery and Development (NeurIPSW-AI4D3), 2023"
+#     selected: y
+
+  - title: "Data-Efficient Molecular Generation with Hierarchical Textual Inversion"
+    image: "assets/publications/2023_HI-Mol/image.png"
+    authors: "<b>Seojin Kim</b>, <a href=https://jaehyun513.github.io>Jaehyun Nam</a>, <a href='https://sihyun.me'>Sihyun Yu</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Younghoon Shin</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
+    venue1: "International Conference on Machine Learning (ICML), 2024"
+    venue2: "NeurIPS Workshop on New Frontiers of AI for Drug Discovery and Development (NeurIPSW-AI4D3), 2023"
+    selected: y
+
+  - title: "Fragment-based Multi-view Molecular Contrastive Learning"
+    image: "assets/publications/2023_FragCL/image.png"
+    authors: "<b>Seojin Kim*</b>, <a href=https://jaehyun513.github.io>Jaehyun Nam*</a>, <a href=https://junsu-kim97.github.io>Junsu Kim</a>, <a href=https://hankook.github.io>Hankook Lee</a>, <a href=https://sites.google.com/view/sungsooahn0215/home>Sungsoo Ahn</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
+    venue1: "Transactions on Machine Learning Research (TMLR), 2024"
+    venue2: "ICLR Workshop on Machine Leraning for Materials (ICLRW-ML4Materials), 2023"
+    selected: y
+  
+  - title: "Confidence-aware Training of Smoothed Classifiers for Certified Robustness"
+    image: "/assets/publications/2022_CAT-RS/image.png"
+    authors: "<a href=https://jh-jeong.github.io>Jongheon Jeong*</a>, <b>Seojin Kim*</b>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
+    venue1: "AAAI Conference on Atrificial Intelligence (AAAI), 2023"
+    venue2: "ECCV Workshop on Adversarial Robustness in the Real World (ECCVW-AROW), 2022"
+    #paper_pdf: "https://subin-kim-cv.github.io/assets/publications/2022_NVP/kim2022scalable.pdf"
+    #project_page: "https://subin-kim-cv.github.io/NVP"
+    #code: "https://github.com/subin-kim-cv/NVP"
+    # poster: "/assets/publications/2021_leveraging_order-free/SOG_poster.pdf"
+    selected: y
+    
+  
