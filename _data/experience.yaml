@@ -1,16 +1,5 @@
 experiences:
-- place: "KAIST ALIN-LAB"
-  time: "Sep. 2021 - Present"
-  title: "M.S. in KAIST of AI"
-  category: "school"
-
-- place: "Upstage AI"
-  time: "Sep. 2021 - Feb. 2022"
-  title: "Research Intern"
-  subtitle: "Startup"
-  category: "work"
-
-- place: "KAIST"
+- place: "GIST"
   time: "Mar. 2019 - Aug. 2024"
   title: "B.S. in Electrical Engineering and Computer Science"
   category: "school"
