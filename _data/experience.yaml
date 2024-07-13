@@ -1,9 +1,4 @@
 experiences:
-- place: "GIST"
-  time: "Mar. 2019 - Aug. 2024"
-  title: "B.S."
-  subtitle: "EECS(major) and AI convergence(minor)"
-  category: "school"
 
 - place: "GIST"
   time: "Sep. 2024 - Present"
@@ -22,3 +17,9 @@ experiences:
   title: "Exchange student"
   subtitle: "Summer Session"
   category: "work"
+
+- place: "GIST"
+  time: "Mar. 2019 - Aug. 2024"
+  title: "B.S."
+  subtitle: "EECS(major) and AI convergence(minor)"
+  category: "school"
