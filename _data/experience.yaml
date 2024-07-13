@@ -1,11 +1,11 @@
 experiences:
-- place: "Gwangju Institute of Science and Technology"
+- place: "GIST"
   time: "Mar. 2019 - Aug. 2024"
   title: "B.S."
-  subtitle: "Electrical Engineering and Computer Science"
+  subtitle: "EECS(major) and AI convergence(minor)"
   category: "school"
 
-- place: "Gwangju Institute of Science and Technology"
+- place: "GIST"
   time: "Sep. 2024 - Present"
   title: "M.S./Ph.D."
   subtitle: "Artificial Intelligence"
@@ -13,12 +13,12 @@ experiences:
 
 - place: "Korea University, Seoul"
   time: "Sep. 2022 - Dec. 2022"
-  title: "M.S./Ph.D."
-  subtitle: "Artificial Intelligence"
-  category: "school"
+  title: "Exchange student"
+  subtitle: "Fall Session"
+  category: "work"
 
 - place: "University of California, Berkeley"
   time: "Jun. 2023 - Aug. 2023"
-  title: ""
-  subtitle: "Artificial Intelligence"
+  title: "Exchange student"
+  subtitle: "Summer Session"
   category: "school"
