@@ -52,6 +52,25 @@ h4 {
   color: rgba(0, 0, 0, 0.60); }
 .image {
   text-align: center; }
+.news-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.news-date {
+  color: cadetblue;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.news-content {
+  flex-grow: 1;
+}
 
 /*  ================ Project styling  ================ */
 .project-container {
