@@ -1,5 +1,12 @@
 experiences:
-- place: "GIST"
+- place: "Gwangju Institute of Science and Technology"
   time: "Mar. 2019 - Aug. 2024"
-  title: "B.S. in Electrical Engineering and Computer Science"
+  title: "B.S."
+  subtitle: "Electrical Engineering and Computer Science"
+  category: "school"
+
+- place: "Gwangju Institute of Science and Technology"
+  time: "Sep. 2024 - Present"
+  title: "M.S./Ph.D."
+  subtitle: "Artificial Intelligence"
   category: "school"
