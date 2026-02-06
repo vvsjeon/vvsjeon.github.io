@@ -1,7 +1,6 @@
 papers:
   - title: "Motion Prior Distillation in Time Reversal Sampling for Generative Inbetweening"
     image: "assets/publications/2023_HI-Mol/image.png"
-    authors: "<b>Seojin Kim</b>, <a href=https://jaehyun513.github.io>Jaehyun Nam</a>, <a href='https://sihyun.me'>Sihyun Yu</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Younghoon Shin</a>, <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a>"
-    venue1: "International Conference on Machine Learning (ICML), 2024"
-    venue2: "NeurIPS Workshop on New Frontiers of AI for Drug Discovery and Development (NeurIPSW-AI4D3), 2023"
+    authors: "<b>Wooseok Jeon</b>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, Dongmin Shin, Hae-Gon Jeon"
+    venue1: "International Conference on Learning Representations (ICLR), 2026"
     selected: y
