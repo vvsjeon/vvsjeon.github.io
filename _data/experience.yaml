@@ -1,9 +1,15 @@
 experiences:
 
-- place: "GIST"
-  time: "Sep. 2024 - Present"
-  title: "M.S."
+- place: "Yonsei Univ"
+  time: "Feb. 2026 - Present"
+  title: "Ph.D."
   subtitle: "Artificial Intelligence"
+  category: "school"
+
+- place: "GIST"
+  time: "Sep. 2024 - Feb. 2026"
+  title: "M.S."
+  subtitle: "AI Convergence"
   category: "school"
 
 - place: "Korea Univ"
