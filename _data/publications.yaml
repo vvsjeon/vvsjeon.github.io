@@ -1,6 +1,9 @@
 papers:
   - title: "Motion Prior Distillation in Time Reversal Sampling for Generative Inbetweening"
     image: "/assets/publications/iclr26.gif"
-    authors: "<b>Wooseok Jeon</b>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, Dongmin Shin, Hae-Gon Jeon"
+    authors: "<b>Wooseok Jeon</b>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, Dongmin Shin, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "International Conference on Learning Representations (ICLR), 2026"
+    paper_pdf: "https://openreview.net/forum?id=GRElsj9W2t"
+    project_page: "https://openreview.net/forum?id=GRElsj9W2t"
+    code: "https://openreview.net/forum?id=GRElsj9W2t"
     selected: y
