@@ -1,9 +1,36 @@
 papers:
+  - title: "Autoregressive Distillation of FlowEdit"
+    image: 
+    authors: "<b>Wooseok Jeon</b>, Seunghyun Shin, Hyeonho Jeong, Sangyeol Lee, Hae-Gon Jeon"
+    venue1: "Computer Vision and Pattern Recognition (CVPR), 2027"
+    paper_pdf: 
+    project_page: 
+    code: 
+    selected: y
+
+  - title: "Δ-Prompt: Bridging Two Prompts with a Single Instruction Prompt for Image and Video Editing"
+    image: 
+    authors: "<b>Wooseok Jeon</b>, Seunghyun Shin, Hyeonho Jeong, Sangyeol Lee, Hae-Gon Jeon"
+    venue1: "Computer Vision and Pattern Recognition (CVPR), 2027"
+    paper_pdf: 
+    project_page: 
+    code: 
+    selected: y
+
+  - title: "Can Diffusion Models Describe What They Can Generate?"
+    image: 
+    authors: "<b>Wooseok Jeon</b>, Seungho Park, Seunghyun Shin, Hae-Gon Jeon"
+    venue1: "Neural Information Processing Systems (NeurIPS), 2026"
+    paper_pdf: 
+    project_page: 
+    code: 
+    selected: y
+
   - title: "Motion Prior Distillation in Time Reversal Sampling for Generative Inbetweening"
     image: "/assets/publications/iclr26.gif"
     authors: "<b>Wooseok Jeon</b>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, Dongmin Shin, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "International Conference on Learning Representations (ICLR), 2026"
     paper_pdf: "https://openreview.net/pdf?id=GRElsj9W2t"
-    project_page: "https://openreview.net/forum?id=GRElsj9W2t"
-    code: "https://openreview.net/forum?id=GRElsj9W2t"
+    project_page: 
+    code: 
     selected: y
