@@ -1,6 +1,6 @@
 papers:
   - title: "Rebalancing Reference Frame Dominance to Improve Motion in Image-to-Video Models"
-    image: "/assets/publications/iclr26.gif"
+    #image: "/assets/publications/iclr26.gif"
     authors: "<b>Wooseok Jeon</b>*, Seungho Park*, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, Sangeyl Lee, <a href=https://hyeonho99.github.io>Hyeonho Jeong</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     #venue1: "International Conference on Learning Representations (ICLR), 2026"
     paper_pdf: "https://arxiv.org/pdf/2605.19398v2"
@@ -8,10 +8,10 @@ papers:
     code: "https://github.com/sh0xed98b8/DyMoS"
     selected: y
   - title: "Motion Prior Distillation in Time Reversal Sampling for Generative Inbetweening"
-    image: "/assets/publications/iclr26.gif"
+    #image: "/assets/publications/iclr26.gif"
     authors: "<b>Wooseok Jeon</b>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=li5M6YkAAAAJ&hl=ko>Dongmin Shin</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "International Conference on Learning Representations (ICLR), 2026"
     paper_pdf: "https://openreview.net/pdf?id=GRElsj9W2t"
     project_page: "https://vvsjeon.github.io/MPD/"
-    code: 
+    code: "https://github.com/vvsjeon/MPDsampler"
     selected: y
