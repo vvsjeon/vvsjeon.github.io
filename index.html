@@ -49,12 +49,14 @@ layout: default
       {% for paper in selected_papers %}
         <div class="paper">
           <div class="row">
+            {% if paper.image %}
             <div class="four columns">
               <div class="figure">
                 <img src="{{ paper.image }}" width="100%">
               </div>
             </div>
-            <div class="eight columns">
+            {% endif %}
+            <div class="{% if paper.image %}eight{% else %}twelve{% endif %} columns">
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               {% if paper.venue1 %}
@@ -98,12 +100,14 @@ layout: default
       {% for paper in site.data.publications.papers %}
         <div class="paper">
           <div class="row">
+            {% if paper.image %}
             <div class="four columns">
               <div class="figure">
                 <img src="{{ paper.image }}" width="100%">
               </div>
             </div>
-            <div class="eight columns">
+            {% endif %}
+            <div class="{% if paper.image %}eight{% else %}twelve{% endif %} columns">
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
