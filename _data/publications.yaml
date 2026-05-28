@@ -1,6 +1,6 @@
 papers:
   - title: "[P1] Rebalancing Reference Frame Dominance to Improve Motion in Image-to-Video Models"
-    authors: "<b>Wooseok Jeon</b><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://scholar.google.com/citations?hl=ko&user=VhP1UfAAAAAJ>Seungho Park</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://hyeonho99.github.io>Hyeonho Jeong</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
+    authors: "<b>Wooseok Jeon</b><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://sh0xed98b8.github.io>Seungho Park</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://hyeonho99.github.io>Hyeonho Jeong</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "arXiv preprint"
     paper_pdf: "https://arxiv.org/pdf/2605.19398v2"
     project_page: "https://sh0xed98b8.github.io/DyMoS/"
