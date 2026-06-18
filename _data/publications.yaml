@@ -6,6 +6,14 @@ papers:
     project_page: "https://sh0xed98b8.github.io/DyMoS/"
     code: "https://github.com/sh0xed98b8/DyMoS"
     selected: y
+  - title: "[C2] TriMotion: Modality-Agnostic Camera Control for Video Generation"
+    #image: "/assets/publications/iclr26.gif"
+    authors: "<a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, Jifei Song, <b>Wooseok Jeon</b>, , <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>, Jiankang Deng"
+    venue1: "European Conference on Computer Vision (ECCV), 2026"
+    paper_pdf: 
+    project_page: "https://seunghyuns98.github.io/TriMotion/"
+    code: "https://github.com/seunghyuns98/TriMotion"
+    selected: y
   - title: "[C1] Motion Prior Distillation in Time Reversal Sampling for Generative Inbetweening"
     #image: "/assets/publications/iclr26.gif"
     authors: "<b>Wooseok Jeon</b>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=li5M6YkAAAAJ&hl=ko>Dongmin Shin</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
