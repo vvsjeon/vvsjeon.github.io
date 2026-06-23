@@ -10,7 +10,7 @@ papers:
     #image: "/assets/publications/iclr26.gif"
     authors: "<a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=9a1PjCIAAAAJ&hl=en>Jifei Song</a>, <b>Wooseok Jeon</b>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>, <a href=https://jiankangdeng.github.io/>Jiankang Deng</a>"
     venue1: "European Conference on Computer Vision (ECCV), 2026"
-    paper_pdf: 
+    paper_pdf: "https://arxiv.org/abs/2606.20774"
     project_page: "https://seunghyuns98.github.io/TriMotion/"
     code: "https://github.com/seunghyuns98/TriMotion"
     selected: y
