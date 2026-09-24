@@ -78,11 +78,11 @@ h4 {
 }
 .paper-name {
   font-weight: bold;
-  color: #f4845f;
+  color: inherit;
   text-decoration: none;
 }
 .paper-name:hover {
-  color: #f4845f;
+  color: inherit;
   text-decoration: underline;
 }
 
