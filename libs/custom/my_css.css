@@ -76,6 +76,15 @@ h4 {
 .news-content {
   flex-grow: 1;
 }
+.paper-name {
+  font-weight: bold;
+  color: #f4845f;
+  text-decoration: none;
+}
+.paper-name:hover {
+  color: #f4845f;
+  text-decoration: underline;
+}
 
 /*  ================ Project styling  ================ */
 .project-container {
