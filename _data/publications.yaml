@@ -1,4 +1,11 @@
 papers:
+  - title: "[P1] WeLike2Party! In-Context Motion Transfer for Multi-Human Image Animation"
+    authors: "<a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://sh0xed98b8.github.io>Seungho Park</a>, <b>Wooseok Jeon</b>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
+    venue1: "arXiv preprint"
+    paper_pdf: "https://arxiv.org/abs/2609.36937"
+    project_page: "https://wl2pvideo.github.io/"
+    # code:
+    selected: y
   - title: "[C3] Rebalancing Reference Frame Dominance to Improve Motion in Image-to-Video Models"
     authors: "<b>Wooseok Jeon</b><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://sh0xed98b8.github.io>Seungho Park</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://hyeonho99.github.io>Hyeonho Jeong</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "Neural Information Processing Systems (NeurIPS), 2026"
