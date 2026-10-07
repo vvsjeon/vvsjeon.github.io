@@ -1,0 +1,12 @@
+{% if include.paper.widget %}
+{% include widgets/{{ include.paper.widget }}.html %}
+{% else %}
+{% assign media_ext = include.paper.image | split: "." | last | downcase %}
+<div class="figure pub-media">
+  {% if media_ext == "mp4" or media_ext == "webm" %}
+  <video src="{{ include.paper.image | prepend: site.baseurl }}" autoplay loop muted playsinline preload="metadata"></video>
+  {% else %}
+  <img src="{{ include.paper.image | prepend: site.baseurl }}" alt="" loading="lazy">
+  {% endif %}
+</div>
+{% endif %}

@@ -27,6 +27,242 @@ h4 {
   margin-bottom: 2px }
 .paper-buttons {
   margin-top: 5px }
+.pub-media img,
+.pub-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f4f4f4; }
+
+/*  ================ Interactive publication thumbnails ================ */
+/*  adapted from Seunghyun Shin's homepage (github.com/seunghyuns98/Website) */
+.widget {
+  --rule: #e1e1e1;
+  --surface: #ffffff;
+  --muted: #777777;
+  --accent: #2e9ae4;
+  position: relative;
+  perspective: 900px; }
+.face {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--surface); }
+
+/* flip card: comparison on the front, continuous control on the back */
+.flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+.flip.flipped { transform: rotateY(180deg); }
+.flip .face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; }
+.flip .front { position: relative; }
+.flip .back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg); }
+.widget .flip-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 5;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+  transition: background 0.2s ease; }
+.widget .flip-btn::before { content: "\21C4"; }
+.widget .flip-btn:hover { background: var(--accent); border-color: #ffffff; color: #ffffff; }
+
+/* video stage, shared by both widget kinds */
+.compare,
+.stack {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  overflow: hidden; }
+.compare video,
+.compare img,
+.stack video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none; }
+
+/* drag to reveal */
+.compare {
+  cursor: ew-resize;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none; }
+.compare .cmp-ours { clip-path: inset(0 0 0 50%); }
+.compare .cmp-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ffffff;
+  transform: translateX(-50%);
+  pointer-events: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6); }
+.compare .cmp-handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
+.compare:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px; }
+
+/* stacked variants, one visible at a time */
+.stack video {
+  opacity: 0;
+  transition: opacity 0.18s ease; }
+.stack video.is-on { opacity: 1; }
+
+/* footer strip under every widget */
+.foot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-top: 1px solid var(--rule);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  white-space: nowrap; }
+.foot .arrow {
+  position: relative;
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--rule); }
+.foot .arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  border-left: 4px solid var(--rule);
+  border-top: 2.5px solid transparent;
+  border-bottom: 2.5px solid transparent; }
+.widget .stack-range {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  accent-color: var(--accent);
+  cursor: pointer; }
+
+/* segmented control (TriMotion reference modality) */
+.foot.seg {
+  gap: 3px;
+  padding: 4px; }
+.widget .seg-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  padding: 2px 0;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease; }
+.widget .seg-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent); }
+.widget .seg-btn.is-on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff; }
+
+/* modality swap: several comparisons stacked, one visible at a time */
+.swap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000; }
+.swap > .compare {
+  position: absolute;
+  inset: 0;
+  aspect-ratio: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease; }
+.swap > .compare.is-on {
+  opacity: 1;
+  pointer-events: auto; }
+
+/* corner labels naming each side of a comparison */
+.cmp-tag {
+  position: absolute;
+  bottom: 4px;
+  z-index: 2;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.7;
+  white-space: nowrap;
+  pointer-events: none; }
+.cmp-l { left: 4px; }
+.cmp-r { right: 4px; }
+
+/* a written prompt standing in where the reference is not a video */
+.cmp-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  background: #15171b;
+  color: #e4e4e4;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center; }
+
 .paper .button {
   display: inline-block;
   height: 25px;

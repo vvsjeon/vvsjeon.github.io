@@ -1,0 +1,24 @@
+<div class="widget">
+  <div class="face">
+    <div class="swap">
+      <div class="compare is-on" data-base="text:Dolly-in, then truck-left."
+           data-ours="{{ site.baseurl }}/assets/publications/tri_text.mp4" data-left="Reference" data-right="TriMotion"
+           title="The camera starts with a steady dolly-in motion, moving forward at a consistent pace. As the sequence progresses, a smooth truck-left motion begins. Throughout the transition, the dolly-in continues at a reduced rate, blending both movements to the end of the shot."
+           tabindex="0" role="slider" aria-label="Text reference versus TriMotion output"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+      <div class="compare" data-base="{{ site.baseurl }}/assets/publications/tri_ref_video.mp4"
+           data-ours="{{ site.baseurl }}/assets/publications/tri_video.mp4" data-left="Reference" data-right="TriMotion"
+           tabindex="0" role="slider" aria-label="Video reference versus TriMotion output"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+      <div class="compare" data-base="{{ site.baseurl }}/assets/publications/tri_ref_pose.mp4"
+           data-ours="{{ site.baseurl }}/assets/publications/tri_pose.mp4" data-left="Reference" data-right="TriMotion"
+           tabindex="0" role="slider" aria-label="Pose reference versus TriMotion output"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+    </div>
+    <div class="foot seg" role="tablist" aria-label="Reference modality">
+      <button type="button" class="seg-btn is-on" role="tab" aria-selected="true">Text</button>
+      <button type="button" class="seg-btn" role="tab" aria-selected="false">Video</button>
+      <button type="button" class="seg-btn" role="tab" aria-selected="false">Pose</button>
+    </div>
+  </div>
+</div>
