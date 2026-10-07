@@ -1,18 +1,8 @@
 <div class="widget">
   <div class="face">
-    <div class="swap">
-      <div class="compare is-on" data-base="{{ site.baseurl }}/assets/publications/wl2p_driving.mp4"
-           data-ours="{{ site.baseurl }}/assets/publications/wl2p_ours.mp4" data-left="Driving" data-right="WeLike2Party!"
-           tabindex="0" role="slider" aria-label="Driving video versus WeLike2Party output"
-           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
-      <div class="compare" data-base="{{ site.baseurl }}/assets/publications/wl2p_reference.jpg"
-           data-ours="{{ site.baseurl }}/assets/publications/wl2p_ours.mp4" data-left="Reference" data-right="WeLike2Party!"
-           tabindex="0" role="slider" aria-label="Reference image versus WeLike2Party output"
-           aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
-    </div>
-    <div class="foot seg" role="tablist" aria-label="Comparison input">
-      <button type="button" class="seg-btn is-on" role="tab" aria-selected="true">Driving</button>
-      <button type="button" class="seg-btn" role="tab" aria-selected="false">Reference</button>
-    </div>
+    <div class="compare" data-base="{{ site.baseurl }}/assets/publications/wl2p_driving.mp4" data-ours="{{ site.baseurl }}/assets/publications/wl2p_ours.mp4"
+         tabindex="0" role="slider" aria-label="Driving video versus WeLike2Party output"
+         aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+    <div class="foot"><span>Driving</span><span class="arrow"></span><span>WeLike2Party!</span></div>
   </div>
 </div>

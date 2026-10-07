@@ -60,11 +60,11 @@ layout: default
         <div class="paper">
           <div class="row">
             {% if paper.image or paper.widget %}
-            <div class="four columns">
+            <div class="four columns pub-thumb-col">
               {% include pub_media.html paper=paper %}
             </div>
             {% endif %}
-            <div class="{% if paper.image or paper.widget %}eight{% else %}twelve{% endif %} columns">
+            <div class="{% if paper.image or paper.widget %}eight columns pub-body-col{% else %}twelve columns{% endif %}">
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               {% if paper.venue1 %}
@@ -109,11 +109,11 @@ layout: default
         <div class="paper">
           <div class="row">
             {% if paper.image or paper.widget %}
-            <div class="four columns">
+            <div class="four columns pub-thumb-col">
               {% include pub_media.html paper=paper %}
             </div>
             {% endif %}
-            <div class="{% if paper.image or paper.widget %}eight{% else %}twelve{% endif %} columns">
+            <div class="{% if paper.image or paper.widget %}eight columns pub-body-col{% else %}twelve columns{% endif %}">
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>

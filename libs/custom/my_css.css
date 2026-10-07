@@ -36,6 +36,12 @@ h4 {
   border-radius: 6px;
   background: #f4f4f4; }
 
+/* thumbnail column at 2/3 of Skeleton's "four columns" */
+@media (min-width: 550px) {
+  .paper .pub-thumb-col { width: 20.4444444%; }
+  .paper .pub-body-col { width: 75.5555556%; }
+}
+
 /*  ================ Interactive publication thumbnails ================ */
 /*  adapted from Seunghyun Shin's homepage (github.com/seunghyuns98/Website) */
 .widget {
