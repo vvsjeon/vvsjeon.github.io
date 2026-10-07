@@ -2,13 +2,13 @@
   <div class="flip">
     <div class="face front">
       <div class="compare" data-base="{{ site.baseurl }}/assets/publications/dymos_base.mp4" data-ours="{{ site.baseurl }}/assets/publications/dymos_ours.mp4"
+           data-left="Baseline" data-right="DyMoS"
            tabindex="0" role="slider" aria-label="Baseline versus DyMoS"
            aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
-      <div class="foot"><span>Baseline</span><span class="arrow"></span><span>DyMoS</span></div>
     </div>
     <div class="face back">
       <div class="stack" data-videos="{{ site.baseurl }}/assets/publications/dymos_step0.mp4,{{ site.baseurl }}/assets/publications/dymos_step1.mp4,{{ site.baseurl }}/assets/publications/dymos_step2.mp4,{{ site.baseurl }}/assets/publications/dymos_step3.mp4"></div>
-      <div class="foot"><span>Static</span><input type="range" class="stack-range" min="0" max="3" step="1" value="0" aria-label="Static to dynamic"><span>Dynamic</span></div>
+      <div class="foot overlay"><span>Static</span><input type="range" class="stack-range" min="0" max="3" step="1" value="0" aria-label="Static to dynamic"><span>Dynamic</span></div>
     </div>
   </div>
   <button type="button" class="flip-btn" aria-label="Switch view" title="Switch view"></button>

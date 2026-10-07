@@ -52,6 +52,7 @@ h4 {
   position: relative;
   perspective: 900px; }
 .face {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--rule);
@@ -226,6 +227,30 @@ h4 {
   background: var(--accent);
   border-color: var(--accent);
   color: #ffffff; }
+
+/* controls drawn on top of the video instead of a strip below it */
+.foot.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  border-top: 0;
+  padding: 10px 8px 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+.foot.seg.overlay {
+  top: 0;
+  bottom: auto;
+  padding: 5px 5px 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0)); }
+.foot.overlay .seg-btn {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff; }
+.foot.overlay .seg-btn:hover { border-color: #ffffff; color: #ffffff; }
+.foot.overlay .seg-btn.is-on { background: var(--accent); border-color: var(--accent); }
 
 /* modality swap: several comparisons stacked, one visible at a time */
 .swap {
