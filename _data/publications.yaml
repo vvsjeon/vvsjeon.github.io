@@ -8,7 +8,7 @@ papers:
     # code:
     selected: y
   - title: "[C3] Rebalancing Reference Frame Dominance to Improve Motion in Image-to-Video Models"
-    # widget: dymos  # temporarily removed while the Safe Browsing warning is reviewed
+    widget: dymos
     authors: "<b>Wooseok Jeon</b><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, Seungho Park<sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://hyeonho99.github.io>Hyeonho Jeong</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "Neural Information Processing Systems (NeurIPS), 2026"
     paper_pdf: "https://arxiv.org/pdf/2605.19398v2"
