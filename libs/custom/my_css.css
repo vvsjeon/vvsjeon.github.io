@@ -39,7 +39,12 @@ h4 {
 /* thumbnail column at 2/3 of Skeleton's "four columns" */
 @media (min-width: 550px) {
   .paper .pub-thumb-col { width: 20.4444444%; }
-  .paper .pub-body-col { width: 75.5555556%; }
+  /* sit the text a little closer to the thumbnail than Skeleton's 4% gutter */
+  .paper .pub-body-col { width: 77.5555556%; margin-left: 2%; }
+}
+/* phones: thumbnail stacks above the text, keep a small gap */
+@media (max-width: 549px) {
+  .paper .pub-thumb-col { margin-bottom: 8px; }
 }
 
 /*  ================ Interactive publication thumbnails ================ */
