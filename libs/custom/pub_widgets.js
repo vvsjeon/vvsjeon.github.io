@@ -8,11 +8,17 @@
 
   function mkVideo(src, cls) {
     var v = document.createElement("video");
-    v.src = src;
+    // iOS and in-app browsers only autoplay muted inline video, and check
+    // the attributes as well as the properties
     v.muted = true;
+    v.defaultMuted = true;
+    v.setAttribute("muted", "");
+    v.setAttribute("playsinline", "");
+    v.setAttribute("webkit-playsinline", "");
+    v.setAttribute("autoplay", "");
     v.loop = true;
     v.preload = "auto";
-    v.setAttribute("playsinline", "");
+    v.src = src;
     if (cls) v.className = cls;
     return v;
   }
@@ -24,31 +30,37 @@
     return s;
   }
 
-  // start a set of clips together, then nudge them back if they drift
+  // Start every clip right away (iOS and in-app browsers do not buffer
+  // until play() is called), rewind them together once all are playing,
+  // then nudge them back if they drift.
   function sync(vids) {
     if (!vids.length) return;
-    var started = false;
-    function start() {
-      if (started) return;
-      for (var i = 0; i < vids.length; i++) {
-        if (vids[i].readyState < 3) return;
-      }
-      started = true;
-      vids.forEach(function (v) {
-        try { v.currentTime = 0; } catch (e) {}
-        v.play().catch(function () {});
-      });
+    var aligned = false;
+    function playAll() {
+      vids.forEach(function (v) { v.play().catch(function () {}); });
     }
-    vids.forEach(function (v) { v.addEventListener("canplay", start); });
+    function align() {
+      if (aligned) return;
+      aligned = true;
+      vids.forEach(function (v) { try { v.currentTime = 0; } catch (e) {} });
+      playAll();
+    }
+    vids.forEach(function (v) {
+      v.addEventListener("playing", function () {
+        for (var i = 0; i < vids.length; i++) if (vids[i].paused) return;
+        align();
+      });
+    });
     vids[0].addEventListener("timeupdate", function () {
-      if (!started) return;
       for (var i = 1; i < vids.length; i++) {
         if (Math.abs(vids[i].currentTime - vids[0].currentTime) > 0.15) {
           try { vids[i].currentTime = vids[0].currentTime; } catch (e) {}
         }
       }
     });
-    start();
+    playAll();
+    // if autoplay is blocked (e.g. Low Power Mode), start on the first touch
+    document.addEventListener("touchstart", playAll, { once: true, passive: true });
   }
 
   // wire a segmented control to a show(index) callback
@@ -99,7 +111,7 @@
     function set(p) {
       pct = Math.max(0, Math.min(100, p));
       handle.style.left = pct + "%";
-      ours.style.clipPath = "inset(0 0 0 " + pct + "%)";
+      ours.style.webkitClipPath = ours.style.clipPath = "inset(0 0 0 " + pct + "%)";
       el.setAttribute("aria-valuenow", Math.round(pct));
     }
     function fromX(x) {

@@ -72,7 +72,10 @@ h4 {
 .flip .front { position: relative; }
 .flip .back {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   transform: rotateY(180deg); }
 .widget .flip-btn {
   position: absolute;
@@ -101,14 +104,18 @@ h4 {
 .stack {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 without aspect-ratio, for older iOS and in-app browsers */
   background: #000000;
   overflow: hidden; }
 .compare video,
 .compare img,
 .stack video {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -121,7 +128,7 @@ h4 {
   touch-action: none;
   -webkit-user-select: none;
   user-select: none; }
-.compare .cmp-ours { clip-path: inset(0 0 0 50%); }
+.compare .cmp-ours { -webkit-clip-path: inset(0 0 0 50%); clip-path: inset(0 0 0 50%); }
 .compare .cmp-handle {
   position: absolute;
   top: 0;
@@ -224,12 +231,17 @@ h4 {
 .swap {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 0;
+  padding-bottom: 56.25%;
   background: #000000; }
 .swap > .compare {
   position: absolute;
-  inset: 0;
-  aspect-ratio: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  padding-bottom: 0;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.18s ease; }
@@ -257,7 +269,10 @@ h4 {
 /* a written prompt standing in where the reference is not a video */
 .cmp-text {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
