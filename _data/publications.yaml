@@ -1,4 +1,10 @@
 papers:
+  - title: "[P2] WARP-VLA: Wrist-Camera Adaptation for View-Robust Policy Execution in Vision-Language-Action Models"
+    widget: warpvla
+    authors: "Junmyeong Lee<sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://scholar.google.com/citations?user=li5M6YkAAAAJ&hl=ko>Dongmin Shin</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, Min-Gyu Park, <b>Wooseok Jeon</b>, Inho Chang, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
+    venue1: "Preprint"
+    project_page: "https://june65.github.io/WARP-VLA/"
+    selected: y
   - title: "[P1] WeLike2Party! In-Context Motion Transfer for Multi-Human Image Animation"
     widget: welike2party
     authors: "<a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://shoxedqbbb.github.io>Seungho Park</a>, <b>Wooseok Jeon</b>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
