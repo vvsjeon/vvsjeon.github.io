@@ -2,7 +2,8 @@ papers:
   - title: "[P2] WARP-VLA: Wrist-Camera Adaptation for View-Robust Policy Execution in Vision-Language-Action Models"
     widget: warpvla
     authors: "<a href=https://scholar.google.com/citations?user=aIBYpJ4AAAAJ&hl=ko>Junmyeong Lee</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://scholar.google.com/citations?user=li5M6YkAAAAJ&hl=ko>Dongmin Shin</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://mingyupark.com/>Min-Gyu Park</a>, <b>Wooseok Jeon</b>, <a href=https://scholar.google.com/citations?user=vI1clmUAAAAJ&hl=ko>Inho Chang</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
-    venue1: "Coming soon!"
+    venue1: "arXiv preprint"
+    paper_pdf: "https://arxiv.org/abs/2610.11508"
     project_page: "https://june65.github.io/WARP-VLA/"
     selected: y
   - title: "[P1] WeLike2Party! In-Context Motion Transfer for Multi-Human Image Animation"
@@ -10,7 +11,7 @@ papers:
     authors: "<a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://shoxedqbbb.github.io>Seungho Park</a>, <b>Wooseok Jeon</b>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "arXiv preprint"
     paper_pdf: "https://arxiv.org/abs/2609.36937"
-    project_page: "https://wl2pvideo.github.io/"
+    project_page: "https://wl2p-video.github.io/"
     # code:
     selected: y
   - title: "[C3] Rebalancing Reference Frame Dominance to Improve Motion in Image-to-Video Models"
@@ -18,7 +19,7 @@ papers:
     authors: "<b>Wooseok Jeon</b><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://shoxedqbbb.github.io>Seungho Park</a><sup style='position: relative; top: 7px; font-size: 1.9em;'>*</sup>, <a href=https://www.seunghyunshin.com>Seunghyun Shin</a>, <a href=https://scholar.google.com/citations?user=gA4sNvcAAAAJ&hl=ko&oi=ao>Sangeyl Lee</a>, <a href=https://hyeonho99.github.io>Hyeonho Jeong</a>, <a href=https://sites.google.com/site/hgjeoncv/home>Hae-Gon Jeon</a>"
     venue1: "Neural Information Processing Systems (NeurIPS), 2026"
     paper_pdf: "https://arxiv.org/pdf/2605.19398v2"
-    # project_page: "https://shoxedqbbb.github.io/DyMoS/"
+    project_page: "https://shoxedqbbb.github.io/DyMoS/"
     code: "https://github.com/shoxedqbbb/DyMoS"
     selected: y
   - title: "[C2] TriMotion: Modality-Agnostic Camera Control for Video Generation"
